@@ -31,7 +31,7 @@ body {}
 DEBUGT
 ************************************************/
 
-* {
+ {
     border: 1px dashed black;
 }
 
@@ -43,46 +43,43 @@ DEBUGT
 
 }
 
-.debug .box-l {
+/* .debug .box-l {
     border: 1px dashed black;
     background-color: red;
 
-}
+} */
 
-.debug .box-r {
+/* .debug .box-r {
 
     background-color: yellow;
 
 
-}
+} */
 
-.debug .info-account {
-    
-    
-}
+
 
 /* .debug .notify {
     
     height: 100px;
 } */
 
-.debug .search {
-    background-color: rgb(106, 175, 74);
+/* .debug .search {
+    
     height: 100px;
-}
+} */
 
 
-.debug .users {
+/* .debug .users {
     background-color: rgb(114, 100, 205);
 
 
-}
+} */
 
-.debug .contact {
+/* .debug .contact {
 
-    height: 100px;
+    height: 80px;
     
-}
+} */
 
 .debug .sms {
 
@@ -135,7 +132,6 @@ UTILITIES
     margin: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
-
 }
 
 .row {
@@ -154,7 +150,31 @@ a{
 }
 
 
+.users-row{
+    display: flex;
+    flex-direction: column;
+}
 
+.card-user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    height: 100px;
+    border-bottom: 1px solid var(--bapp-txt-lighter);
+}
+
+.photo-user{
+    width: 80px;    
+    height: 80%;
+}
+
+.hour-user{
+
+    height: 80%;
+
+}
 
 
 /* #region CALC COL/12*************************** */
@@ -272,7 +292,6 @@ MAIN
 
 #site_main {
     height: 100vh;
-    background-color: purple;
     overflow: hidden;
 
 }
@@ -289,6 +308,8 @@ Box Left
     justify-content: space-between;
     text-align: center;
     background-color: var(--bapp-prymary);
+    padding: 0.5rem;
+    border-right: 1px solid var(--bapp-txt-lighter);
 }
 
 .icons{
@@ -319,9 +340,22 @@ Box Left
     background-color: var(--bapp-light);
 }
 
+.search{
+    background-color: var(--bapp-prymary);
+    padding: 0.5rem;
+}
+
+.box-src{
+    padding: 0.5rem;
+    background-color: var(--bapp-light);
+    display: flex;
+    gap: 1rem;
+    color: var(--bapp-txt-lighter);
+    
+}
 
 .users{
-    height: 100%;
+    background-color: var(--bapp-light);
 }
 
 
@@ -340,6 +374,7 @@ Box Right
 
 .contact{
     background-color: var(--bapp-prymary);
+    height: 80px;
 }
 
 
@@ -519,6 +554,16 @@ MEDIA QUERY FIRST DESKTOP
 
     }
 
+    .column{
+        display: none;
+    }
+    .hour-user{
+        display: none;
+    }
+
+    .card-user{
+        justify-content: center;
+    }
 
 }
 
