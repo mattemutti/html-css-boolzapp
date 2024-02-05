@@ -20,6 +20,7 @@ RULE FOR ALL
     --bapp-light: #ffffffFF;
     --bapp-txt-lighter: #6b7376FF;
     --bapp-txt: #060606FF;
+    --bapp-search: #8edafcFF;
 
 }
 
@@ -30,19 +31,14 @@ body {}
 DEBUGT
 ************************************************/
 
-.debug {
+* {
     border: 1px dashed black;
 }
 
-.debug #site_main {
-    border: 1px dashed black;
-    
-
-}
 
 .debug .container {
     border: 1px dashed black;
-    background-color: green;
+    
 
 
 }
@@ -50,27 +46,23 @@ DEBUGT
 .debug .box-l {
     border: 1px dashed black;
     background-color: red;
-    
-
 
 }
 
 .debug .box-r {
-   
-    
-    border: 1px dashed black;
+
     background-color: yellow;
-  
+
 
 }
 
 .debug .info-account {
-    background-color: azure;
+    
     height: 100px;
 }
 
 .debug .notify {
-    background-color: rgb(91, 115, 179);
+    
     height: 100px;
 }
 
@@ -82,48 +74,49 @@ DEBUGT
 
 .debug .users {
     background-color: rgb(114, 100, 205);
-    
+
+
 }
 
 .debug .contact {
-    
+
     height: 100px;
-    background-color: var(--bapp-bg-section);
+    
 }
 
 .debug .sms {
-    flex-grow: 1;
-    background-color: chocolate;
+
+    background-color: rgb(233, 162, 112);
 
 }
 
 
 
 .debug .digit {
-    
+
     height: 100px;
     background-color: rgb(207, 34, 52);
 
 }
 
-.debug .send{
+.debug .send {
     border: 1px dashed black;
     height: 100px;
-    
+
 }
 
-.debug .recive{
+.debug .recive {
     border: 1px dashed black;
     height: 100px;
-    
+
 }
 
-.sms-send{
-    background-color: orange;
+.debug .sms-send {
+    background-color: rgb(21, 0, 255);
 }
 
-.sms-recive{
-    background-color: rgb(0, 255, 0);
+.debug .sms-recive {
+    background-color: rgb(255, 0, 191);
 }
 
 
@@ -142,7 +135,7 @@ UTILITIES
     margin: auto;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    
+
 }
 
 .row {
@@ -151,41 +144,13 @@ UTILITIES
 
 }
 
-.box-r{
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
+img {
+    height: 100%;
+    border-radius: 50%;
 }
 
 
 
-.sms{
-    display: flex;
-    flex-direction: column;
-   position: relative;
-}
-
-.send{
-
-
-}
-
-.sms-send{
-    position: absolute;
-    right: 100px;
-    top: 40px;
-    border: 1px solid black;
-    border-radius: 0.4rem;
-}
-
-.sms-recive {
-    
-    position: absolute;
-    left: 100px;
-    top: 120px;
-    border: 1px solid black;
-    border-radius: 0.4rem;
-}
 
 
 
@@ -307,16 +272,79 @@ MAIN
     height: 100vh;
     background-color: purple;
     overflow: hidden;
-    overflow-y: auto;
-
 
 }
 
 
+/***********************************************
+Box Left
+************************************************/
+
+.info-account{
+    background-color: var(--bapp-prymary);
+}
+
+.notify{
+
+    background-color: var(--bapp-search);
+}
+
+.info-account{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.users{
+    height: 100%;
+}
 
 
 
+/***********************************************
+Box Right
+************************************************/
 
+
+
+.box-r {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.contact{
+    background-color: var(--bapp-prymary);
+}
+
+
+.sms {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+    background-image: url(../img/mine.jpg);
+}
+
+.send {}
+
+
+
+.sms-send {
+  
+}
+
+.sms-recive {
+
+ 
+}
 
 
 
@@ -455,22 +483,22 @@ MEDIA QUERY FIRST DESKTOP
     }
 
 
-    .container{
+    .container {
         width: 100vw;
         margin-bottom: 0;
         margin-top: 0;
-        
-        
+
+
     }
 
-    .box-l{
+    .box-l {
         height: 100vh;
     }
 
 
-    .box-r{
+    .box-r {
         height: 100vh;
-        
+
     }
 
 
