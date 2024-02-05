@@ -39,28 +39,61 @@ DEBUGT
 }
 
 .debug #site_main{
-    height: 100vw;
+    border: 1px dashed black;
+    height: 100vh;
     background-color: purple;
-    padding: 2rem;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .debug .container{
+    border: 1px dashed black;
     background-color: green;
+    
     
     
 }
 
 .debug .box-l{
+    border: 1px dashed black;
     background-color: red;
-    height: 800px;
+    height: 1000px;
+    overflow: hidden;
+    overflow-y: auto;
+    
 
 }
 
 .debug .box-r{
+    border: 1px dashed black;
     background-color: yellow;
-    
-    height: 800px;
+    height: ;
+    overflow: hidden;
+    overflow-y: auto;
 }
+
+.debug .info-account{
+    background-color: azure;
+    height: 100px;
+}
+
+.debug .notify{
+    background-color: rgb(91, 115, 179);
+    height: 100px;
+}
+
+.debug .search{
+    background-color: rgb(106, 175, 74);
+    height: 100px;
+}
+
+
+.debug .users{
+    background-color: rgb(114, 100, 205);
+    height: 100px;
+}
+
+
 
 /***********************************************
 UTILITIES
@@ -71,7 +104,6 @@ UTILITIES
  .container
 {
   width: 80%;
-  height: 90%;
   max-width: 1176px;
   margin: auto
 }
@@ -79,8 +111,8 @@ UTILITIES
 .row
 {
   display: flex;
-  margin: 0 -1rem;
   justify-content: center;
+  padding: 2rem 0
 }
 
 
