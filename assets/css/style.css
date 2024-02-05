@@ -300,6 +300,12 @@ Box Left
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--bapp-txt-lighter);
+    gap: 0.5rem;
+}
+
+.icon-1, .icon-2, .icon-3 {
+    font-size: 200%;
 }
 
 .users{
