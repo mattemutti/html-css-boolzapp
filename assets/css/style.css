@@ -13,7 +13,14 @@ RULE FOR ALL
 }
 
 :root {
-    --bapp-prymary: ;
+    --bapp-prymary: #eaeaeaFF;
+    --bapp-bg-top: #009688FF;
+    --bapp-bg-bottom: #dbdbd3FF;
+    --bapp-bg-section: #eaeaeaFF;
+    --bapp-bg-sms: #d5f9baFF;
+    --bapp-light:#ffffffFF;
+    --bapp-txt-lighter: #6b7376FF;
+    --bapp-txt: #060606FF;
 
 }
 
