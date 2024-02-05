@@ -318,11 +318,12 @@ Box Left
     justify-content: center;
     align-items: center;
     color: var(--bapp-txt-lighter);
-    gap: 0.5rem;
+    gap: 1rem;
+    padding: 0.5rem;
 }
 
 .icon-1, .icon-2, .icon-3, .icon-4 {
-    font-size: 200%;
+    font-size: 150%;
 }
 
 
@@ -330,7 +331,7 @@ Box Left
     background-color: var(--bapp-search);
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 1rem 0.5rem;
 }
 
