@@ -85,7 +85,7 @@ DEBUGT
 
 .debug .users {
     background-color: rgb(114, 100, 205);
-    height: 100px;
+    height: 300px;
 }
 
 .debug .contact {
@@ -93,7 +93,20 @@ DEBUGT
     background-color: var(--bapp-bg-section);
 }
 
-.bebug .sms {}
+.debug .sms {
+    height: 400px;
+    background-color: chocolate;
+
+}
+
+
+
+.debug .digit {
+    height: 100px;
+    background-color: rgb(207, 34, 52);
+
+}
+
 
 
 /***********************************************
@@ -117,16 +130,7 @@ UTILITIES
 
 }
 
-.box-container{
-    width: 100%;
-    height: ;
-}
 
-.column {
-    display: flex;
-    flex-direction: column;
-
-}
 
 
 /* #region CALC COL/12*************************** */
@@ -376,6 +380,10 @@ MEDIA QUERY FIRST DESKTOP
     .notify,
     .search {
         display: none;
+    }
+
+    .users{
+        height: 100%;
     }
 
 
