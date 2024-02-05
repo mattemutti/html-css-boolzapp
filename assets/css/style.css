@@ -155,7 +155,7 @@ MEDIA QUERY FIRST DESKTOP
 
 /* ------LARGE-----------------------------*/
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
 
     /* #region Calc col large */
 
@@ -225,7 +225,7 @@ MEDIA QUERY FIRST DESKTOP
 
 /* ------MEDIUM-----------------------------*/
 
-@media screen and (min-width: 991px) {
+@media screen and (max-width: 991px) {
 
     /* #region Calc col medium */
 
@@ -296,7 +296,7 @@ MEDIA QUERY FIRST DESKTOP
 
 /* ------SMALL-----------------------------*/
 
-@media screen and (min-width: 540px) {
+@media screen and (max-width: 540px) {
 
     /* #region Calc col small */
 
