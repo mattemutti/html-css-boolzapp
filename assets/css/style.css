@@ -58,13 +58,13 @@ DEBUGT
 
 .debug .info-account {
     
-    height: 100px;
+    
 }
 
-.debug .notify {
+/* .debug .notify {
     
     height: 100px;
-}
+} */
 
 .debug .search {
     background-color: rgb(106, 175, 74);
@@ -149,7 +149,9 @@ img {
     border-radius: 50%;
 }
 
-
+a{
+    color: var(--bapp-txt-lighter);
+}
 
 
 
@@ -280,19 +282,13 @@ MAIN
 Box Left
 ************************************************/
 
-.info-account{
-    background-color: var(--bapp-prymary);
-}
-
-.notify{
-
-    background-color: var(--bapp-search);
-}
 
 .info-account{
+    height: 80px;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    background-color: var(--bapp-prymary);
 }
 
 .icons{
@@ -304,9 +300,25 @@ Box Left
     gap: 0.5rem;
 }
 
-.icon-1, .icon-2, .icon-3 {
+.icon-1, .icon-2, .icon-3, .icon-4 {
     font-size: 200%;
 }
+
+
+.notify{
+    background-color: var(--bapp-search);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
+}
+
+.icon-4{
+    border-radius: 50%;
+    color: var(--bapp-search);
+    background-color: var(--bapp-light);
+}
+
 
 .users{
     height: 100%;
