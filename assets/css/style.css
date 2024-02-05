@@ -36,10 +36,8 @@ DEBUGT
 
 .debug #site_main {
     border: 1px dashed black;
-    height: 100vh;
-    background-color: purple;
-    overflow: hidden;
-    overflow-y: auto;
+    
+
 }
 
 .debug .container {
@@ -53,7 +51,6 @@ DEBUGT
 .debug .box-l {
     border: 1px dashed black;
     background-color: red;
-    height: 100%;
     overflow: hidden;
     overflow-y: auto;
 
@@ -61,11 +58,13 @@ DEBUGT
 }
 
 .debug .box-r {
+    display: flex;
+    flex-direction: column;
+    
     border: 1px dashed black;
     background-color: yellow;
     overflow: hidden;
     overflow-y: auto;
-    height: 100%;
 
 }
 
@@ -91,12 +90,13 @@ DEBUGT
 }
 
 .debug .contact {
+    
     height: 100px;
     background-color: var(--bapp-bg-section);
 }
 
 .debug .sms {
-    height: 600px;
+    flex-grow: 1;
     background-color: chocolate;
 
 }
@@ -104,9 +104,14 @@ DEBUGT
 
 
 .debug .digit {
+    
     height: 100px;
     background-color: rgb(207, 34, 52);
 
+}
+
+.send{
+    
 }
 
 
@@ -129,7 +134,7 @@ UTILITIES
 
 .row {
     display: flex;
-    justify-content: center;
+    justify-content: space-betwee;
 
 }
 
@@ -249,7 +254,14 @@ UTILITIES
 MAIN
 ************************************************/
 
-#site_main {}
+#site_main {
+    height: 100vh;
+    background-color: purple;
+    overflow: hidden;
+    overflow-y: auto;
+
+
+}
 
 
 
@@ -393,23 +405,17 @@ MEDIA QUERY FIRST DESKTOP
         height: 100%;
     }
 
-    .debug .users {
-        height: 600px;
-    }
 
     .container{
-        width: 100vw;
-        
-    }
-
-
-    .container {
         width: 100vw;
         height: 100%;
         margin-bottom: 0;
         margin-top: 0;
         
     }
+
+
+
 
 
 }
