@@ -38,7 +38,7 @@ DEBUGT
     border: 1px dashed black;
 }
 
-.debug .back-app{
+.debug #site_main{
     height: 100vw;
     background-color: purple;
     padding: 2rem;
@@ -46,21 +46,20 @@ DEBUGT
 
 .debug .container{
     background-color: green;
-    padding: 2rem 0;
+    
     
 }
 
 .debug .box-l{
     background-color: red;
-    width: 500px;
-    height: 400px;
+    height: 800px;
 
 }
 
 .debug .box-r{
     background-color: yellow;
-    width: 500px;
-    height: 400px;
+    
+    height: 800px;
 }
 
 /***********************************************
@@ -80,10 +79,8 @@ UTILITIES
 .row
 {
   display: flex;
-  flex-wrap: wrap;
   margin: 0 -1rem;
   justify-content: center;
-  align-items: center;
 }
 
 
@@ -152,13 +149,7 @@ UTILITIES
 /* #endregion CALC COL/12*************************** */
 
 
-/***********************************************
-HEADER
-************************************************/
 
-#site_header{
-
-}
 
 
 /***********************************************
@@ -171,13 +162,8 @@ MAIN
 
 
 
-/***********************************************
-FOOTER
-************************************************/
 
-#site_footer{
 
-}
 
 
 
