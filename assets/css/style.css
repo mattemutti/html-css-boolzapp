@@ -342,7 +342,7 @@ Box Right
             display: flex;
             max-width: 500px;
 
-            /* @media screen and (max-width: 991px) {
+            @media screen and (max-width: 991px) {
 
                 max-width: 400px;
             }
@@ -350,7 +350,7 @@ Box Right
             @media screen and (max-width: 540px) {
 
                 max-width: 300px;
-            } */
+            }
 
 
         }
@@ -362,7 +362,7 @@ Box Right
             display: flex;
             max-width: 500px;
 
-            /* @media screen and (max-width: 991px) {
+            @media screen and (max-width: 991px) {
 
                 max-width: 400px;
             }
@@ -370,7 +370,7 @@ Box Right
             @media screen and (max-width: 540px) {
 
                 max-width: 300px;
-            } */
+            }
 
 
 
@@ -497,17 +497,6 @@ MEDIA QUERY FIRST DESKTOP
 
 
 
-    /**************************************************
-    PER GIULIANO********************************/
-
-    .send,
-    .recive {
-        max-width: 400px;
-
-    }
-
-
-
 }
 
 
@@ -527,14 +516,5 @@ MEDIA QUERY FIRST DESKTOP
     }
 
 
-
-    /**************************************************
-    PER GIULIANO********************************/
-
-    .send,
-    .recive {
-        max-width: 200px;
-
-    }
 
 }
