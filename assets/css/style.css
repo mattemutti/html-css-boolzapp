@@ -28,9 +28,8 @@ RULE FOR ALL
 
 body {
 
-    background: linear-gradient(to top, var(--bapp-bg-bottom) 75%, var(--bapp-bg-top) 50%);
-  )
-   
+    background: linear-gradient(to top, var(--bapp-bg-bottom) 85%, var(--bapp-bg-top) 50%);
+
 }
 
 
@@ -96,11 +95,12 @@ DEBUGT
 
 } */
 
-.debug .send, .recive {
+.debug .send,
+.recive {
 
     width: 300px;
-    
-  }
+
+}
 
 
 
@@ -149,19 +149,14 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem;
+    gap: 1rem;
+    padding: 0.8rem;
     height: 70px;
     border-bottom: 1px solid var(--bapp-border);
 }
 
-.photo-user {
-    width: 80px;
-    height: 80%;
-}
 
 .hour-user {
-
     height: 80%;
 
 }
@@ -240,7 +235,7 @@ Box Left
 
 
 .box-l {
-    width: 300px;
+    width: 350px;
     height: 100%;
 }
 
@@ -268,7 +263,7 @@ Box Left
 .icon-2,
 .icon-3,
 .icon-4 {
-    font-size: 150%;
+    font-size: 120%;
 }
 
 
@@ -291,18 +286,18 @@ Box Left
     height: 70px;
     background-color: var(--bapp-prymary);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+
 }
 
 .box-src {
     padding: 0.8rem;
     background-color: var(--bapp-light);
     display: flex;
-    justify-content: center;
     gap: 1rem;
     color: var(--bapp-txt-lighter);
-
+    width: 95%;
 }
 
 .users {
@@ -311,6 +306,11 @@ Box Left
     overflow-y: scroll;
 }
 
+
+.txt-chat,
+.hour-user {
+    color: var(--bapp-txt-lighter);
+}
 
 
 /***********************************************
@@ -333,25 +333,25 @@ Box Right
 
     >.sms {
         background-image: url(../img/mine.jpg);
-        height: calc(100% - 140px);     
+        height: calc(100% - 140px);
         display: flex;
         flex-direction: column;
         padding: 2rem;
         overflow-y: scroll;
-    
-    
+
+
         &>div {
             min-height: 140px;
         }
-    
+
         >.send {
             align-self: flex-end;
             background-color: var(--bapp-bg-sms);
             border-radius: 1rem;
-            
 
-        } 
-    
+
+        }
+
         >.recive {
             align-self: flex-start;
             background-color: var(--bapp-light);
@@ -365,18 +365,11 @@ Box Right
 }
 
 
-
-
-.contact, .digit {
+.contact,
+.digit {
     background-color: var(--bapp-prymary);
 
 }
-
-
-
-
-
-
 
 
 
@@ -388,12 +381,7 @@ MEDIA QUERY FIRST DESKTOP
 
 /* ------LARGE-----------------------------*/
 
-@media screen and (max-width: 1440px) {
-
-
-   
-
-}
+@media screen and (max-width: 1440px) {}
 
 
 /* ------MEDIUM-----------------------------*/
@@ -401,7 +389,7 @@ MEDIA QUERY FIRST DESKTOP
 @media screen and (max-width: 991px) {
 
 
-    
+
 
     .container {
         height: 100vh;
@@ -409,7 +397,7 @@ MEDIA QUERY FIRST DESKTOP
     }
 
     .box-l {
-        width: 100px;
+        width: 80px;
     }
 
 
@@ -422,22 +410,17 @@ MEDIA QUERY FIRST DESKTOP
         height: calc(100% - 70px);
     }
 
-    .icons {
-        display: none;
-    }
-
-
-    .column {
-        display: none;
-    }
-
+    .icons,
+    .column,
     .hour-user {
         display: none;
     }
 
-    .card-user {
+    .card-user,
+    .info-account {
         justify-content: center;
     }
+
 
 }
 
@@ -452,7 +435,7 @@ MEDIA QUERY FIRST DESKTOP
 
 
 
-    
+
 
 
     .box-l {
