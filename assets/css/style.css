@@ -311,6 +311,41 @@ Box Right
 
 
 
+/********************************
+Bonus
+**********************************/
+
+
+.menu{
+    list-style: none;
+}
+
+.tendina {
+    list-style: none;
+    display: none;
+
+
+}
+
+.td-n {
+    text-decoration: none;
+
+}
+
+ul.menu li a:hover{
+    color: var(--bapp-border);
+
+   
+}
+
+    
+
+/********************************
+End Bonus
+**********************************/
+
+
+
 /***********************************************
 MEDIA QUERY FIRST DESKTOP
 ************************************************/
@@ -319,9 +354,7 @@ MEDIA QUERY FIRST DESKTOP
 
 /* ------LARGE-----------------------------*/
 
-@media screen and (max-width: 1440px) {
-    
-}
+@media screen and (max-width: 1440px) {}
 
 
 
