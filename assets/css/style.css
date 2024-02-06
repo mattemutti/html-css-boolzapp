@@ -290,13 +290,16 @@ Box Left
 .search {
     height: 70px;
     background-color: var(--bapp-prymary);
-    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-src {
-    padding: 0.5rem;
+    padding: 0.8rem;
     background-color: var(--bapp-light);
     display: flex;
+    justify-content: center;
     gap: 1rem;
     color: var(--bapp-txt-lighter);
 
@@ -343,10 +346,16 @@ Box Right
     
         >.send {
             align-self: flex-end;
+            background-color: var(--bapp-bg-sms);
+            border-radius: 1rem;
+            
+
         } 
     
         >.recive {
             align-self: flex-start;
+            background-color: var(--bapp-light);
+            border-radius: 1rem;
         }
 
     }
