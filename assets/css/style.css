@@ -78,7 +78,7 @@ DEBUGT
     background-color: rgb(207, 34, 52);
 
 } */
-
+/* 
 .debug .send {
     border: 1px dashed black;
     height: 100px;
@@ -89,15 +89,16 @@ DEBUGT
     border: 1px dashed black;
     height: 100px;
 
-}
+} */
 
-.debug .sms-send {
-    background-color: rgb(21, 0, 255);
-}
+.debug .send, .recive {
+    
 
-.debug .sms-recive {
-    background-color: rgb(255, 0, 191);
-}
+     
+       
+    
+  }
+
 
 
 
@@ -121,7 +122,7 @@ UTILITIES
 }
 
 .row {
-    
+
     justify-content: space-betwee;
 
 }
@@ -147,7 +148,7 @@ a {
     align-items: center;
     gap: 0.5rem;
     padding: 0.5rem;
-    height: 100px;
+    height: 70px;
     border-bottom: 1px solid var(--bapp-txt-lighter);
 }
 
@@ -163,60 +164,6 @@ a {
 }
 
 
-/* #region CALC COL/12*************************** */
-
-.col-1 {
-    width: calc((100% / 12) * 1);
-}
-
-.col-2 {
-    width: calc((100% / 12) * 2);
-}
-
-.col-3 {
-    width: calc((100% / 12) * 3);
-}
-
-.col-4 {
-    width: calc((100% / 12) * 4);
-}
-
-.col-5 {
-    width: calc((100% / 12) * 5);
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: calc((100% / 12) * 7);
-}
-
-.col-8 {
-    width: calc((100% / 12) * 8);
-}
-
-.col-9 {
-    width: calc((100% / 12) * 9);
-}
-
-.col-10 {
-    width: calc((100% / 12) * 10);
-}
-
-.col-11 {
-    width: calc((100% / 12) * 11);
-}
-
-.col-12 {
-    width: 100%;
-}
-
-/* #endregion CALC COL/12*************************** */
-
-
-/* #region CALC ROW/12*************************** */
 
 
 
@@ -290,7 +237,7 @@ Box Left
 
 
 .box-l {
-    width: 700px;
+    width: 300px;
     height: 100%;
 }
 
@@ -379,277 +326,133 @@ Box Right
 
 
     >.sms {
-        height: calc(100% - 140px);
-        overflow-y: scroll;
+        background-image: url(../img/mine.jpg);
+        height: calc(100% - 140px);     
         display: flex;
         flex-direction: column;
         padding: 2rem;
+        overflow-y: scroll;
+    
+    
+        &>div {
+            min-height: 140px;
+        }
+    
+        >.send {
+            align-self: flex-end;
+            width: 300px;
+        } 
+    
+        >.recive {
+            align-self: flex-start;
+            width: 300px;
+        }
+
     }
+
+
+
 }
-        .contact {
-            background-color: var(--bapp-prymary);
-
-        }
-
-
-        .sms {
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            position: relative;
-            background-image: url(../img/mine.jpg);
-        }
-
-        .send {}
 
 
 
-        .sms-send {}
 
-        .sms-recive {}
+.contact {
+    background-color: var(--bapp-prymary);
+
+}
 
 
 
 
 
-        /***********************************************
+
+
+
+
+/***********************************************
 MEDIA QUERY FIRST DESKTOP
 ************************************************/
 
 
 
-        /* ------LARGE-----------------------------*/
+/* ------LARGE-----------------------------*/
 
-        @media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
 
-            /* #region Calc col large */
 
-            .col-lg-1 {
-                width: calc((100% / 12) * 1);
-            }
+   
 
-            .col-lg-2 {
-                width: calc((100% / 12) * 2);
-            }
+}
 
-            .col-lg-3 {
-                width: calc((100% / 12) * 3);
-            }
 
-            .col-lg-4 {
-                width: calc((100% / 12) * 4);
-            }
+/* ------MEDIUM-----------------------------*/
 
-            .col-lg-5 {
-                width: calc((100% / 12) * 5);
-            }
+@media screen and (max-width: 991px) {
 
-            .col-lg-6 {
-                width: 50%;
-            }
 
-            .col-lg-7 {
-                width: calc((100% / 12) * 7);
-            }
+    
 
-            .col-lg-8 {
-                width: calc((100% / 12) * 8);
-            }
+    .container {
+        height: 100vh;
+        margin: 0;
+    }
 
-            .col-lg-9 {
-                width: calc((100% / 12) * 9);
-            }
+    .box-l {
+        width: 100px;
+    }
 
-            .col-lg-10 {
-                width: calc((100% / 12) * 10);
-            }
 
-            .col-lg-11 {
-                width: calc((100% / 12) * 11);
-            }
+    .notify,
+    .search {
+        display: none;
+    }
 
-            .col-lg-12 {
-                width: 100%;
-            }
+    .users {
+        height: calc(100% - 70px);
+    }
 
-            /* #endregion Calc col large */
+    .icons {
+        display: none;
+    }
 
 
-        }
+    .column {
+        display: none;
+    }
 
+    .hour-user {
+        display: none;
+    }
 
-        /* ------MEDIUM-----------------------------*/
+    .card-user {
+        justify-content: center;
+    }
 
-        @media screen and (max-width: 991px) {
+}
 
-            /* #region Calc col medium */
 
-            .col-md-1 {
-                width: calc((100% / 12) * 1);
-            }
 
-            .col-md-2 {
-                width: calc((100% / 12) * 2);
-            }
 
-            .col-md-3 {
-                width: calc((100% / 12) * 3);
-            }
 
-            .col-md-4 {
-                width: calc((100% / 12) * 4);
-            }
 
-            .col-md-5 {
-                width: calc((100% / 12) * 5);
-            }
+/* ------SMALL-----------------------------*/
 
-            .col-md-6 {
-                width: 50%;
-            }
+@media screen and (max-width: 540px) {
 
-            .col-md-7 {
-                width: calc((100% / 12) * 7);
-            }
 
-            .col-md-8 {
-                width: calc((100% / 12) * 8);
-            }
 
-            .col-md-9 {
-                width: calc((100% / 12) * 9);
-            }
+    
 
-            .col-md-10 {
-                width: calc((100% / 12) * 10);
-            }
 
-            .col-md-11 {
-                width: calc((100% / 12) * 11);
-            }
+    .box-l {
+        display: none;
+    }
 
-            .col-md-12 {
-                width: 100%;
-            }
 
-            /* #endregion Calc col medium */
 
-            .container {
-                height: 100vh;
-                margin: 0;
-            }
 
-            .box-l{
-                width: 100px;
-            }
 
 
-            .notify,
-            .search {
-                display: none;
-            }
 
-            .users {
-                height: calc(100% - 70px);
-            }
-
-
-
-            /* .box-l {
-                height: 100vh;
-            } */
-
-
-            /* .box-r {
-                height: 100vh;
-
-            } */
-
-            .column {
-                display: none;
-            }
-
-            .hour-user {
-                display: none;
-            }
-
-            .card-user {
-                justify-content: center;
-            }
-
-        }
-
-
-
-
-
-
-        /* ------SMALL-----------------------------*/
-
-        @media screen and (max-width: 540px) {
-
-            /* #region Calc col small */
-
-            .col-sm-1 {
-                width: calc((100% / 12) * 1);
-            }
-
-            .col-sm-2 {
-                width: calc((100% / 12) * 2);
-            }
-
-            .col-sm-3 {
-                width: calc((100% / 12) * 3);
-            }
-
-            .col-sm-4 {
-                width: calc((100% / 12) * 4);
-            }
-
-            .col-sm-5 {
-                width: calc((100% / 12) * 5);
-            }
-
-            .col-sm-6 {
-                width: 50%;
-            }
-
-            .col-sm-7 {
-                width: calc((100% / 12) * 7);
-            }
-
-            .col-sm-8 {
-                width: calc((100% / 12) * 8);
-            }
-
-            .col-sm-9 {
-                width: calc((100% / 12) * 9);
-            }
-
-            .col-sm-10 {
-                width: calc((100% / 12) * 10);
-            }
-
-            .col-sm-11 {
-                width: calc((100% / 12) * 11);
-            }
-
-            .col-sm-12 {
-                width: 100%;
-            }
-
-            /* #endregion Calc col small */
-
-
-
-            .box-l {
-                display: none;
-            }
-
-
-
-
-
-
-
-        }
+}
