@@ -84,12 +84,9 @@ DEBUGT
     height: 100px;
 
 }
+*/
 
-.debug .recive {
-    border: 1px dashed black;
-    height: 100px;
 
-} */
 
 
 
@@ -130,7 +127,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--bapp-icons);
+
     gap: 1rem;
     padding: 0.5rem;
 }
@@ -138,8 +135,11 @@ a {
 .icon-1,
 .icon-2,
 .icon-3,
-.icon-4 {
+.icon-4,
+.icon-l,
+.icon-audio {
     font-size: 120%;
+    color: var(--bapp-icons);
 }
 
 
@@ -342,6 +342,16 @@ Box Right
             display: flex;
             max-width: 500px;
 
+            @media screen and (max-width: 991px) {
+    
+                max-width: 400px;
+            }
+
+            @media screen and (max-width: 540px) {
+    
+                max-width: 300px;
+            }
+
 
         }
 
@@ -352,16 +362,21 @@ Box Right
             display: flex;
             max-width: 500px;
 
+            @media screen and (max-width: 991px) {
+    
+                max-width: 400px;
+            }
 
+            @media screen and (max-width: 540px) {
+    
+                max-width: 300px;
+            }
 
+     
 
         }
-
-
-
-
-
     }
+
 
     >.contact {
         display: flex;
@@ -369,6 +384,43 @@ Box Right
         align-items: center;
         padding: 1rem;
     }
+
+
+    >.digit {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+
+
+
+        >.sms-write {
+            color: var(--bapp-txt-lighter);
+            text-align: left;
+            background-color: var(--bapp-light);
+            padding: 0.8rem;
+            width: 85%;
+            border-radius: 0.3rem;
+        }
+
+        @media (max-width: 540px) {
+
+            justify-content: center;
+
+            >.sms-write{
+                width: 100%;
+            }
+            
+        }
+
+
+
+    }
+
+
+
+
+
 
 }
 
@@ -443,6 +495,7 @@ MEDIA QUERY FIRST DESKTOP
         justify-content: center;
     }
 
+   
 
 }
 
@@ -455,12 +508,12 @@ MEDIA QUERY FIRST DESKTOP
 
 @media screen and (max-width: 540px) {
 
-    .box-l {
+    .box-l,
+    .icons-r,
+    .icon-l,
+    .icon-audio {
         display: none;
     }
 
-    .icons-r {
-        display: none;
-    }
-
+    
 }
