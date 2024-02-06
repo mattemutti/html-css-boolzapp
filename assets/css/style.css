@@ -21,19 +21,24 @@ RULE FOR ALL
     --bapp-txt-lighter: #6b7376FF;
     --bapp-txt: #060606FF;
     --bapp-search: #8edafcFF;
+    --bapp-border: rgba(128, 128, 128, 0.174);
+    --bapp-icons: #b1b1b1FF;
 
 }
 
-body {}
+body {
+
+    background: linear-gradient(to top, var(--bapp-bg-bottom) 75%, var(--bapp-bg-top) 50%);
+  )
+   
+}
 
 
 /***********************************************
 DEBUGT
 ************************************************/
 
-.debug * {
-    border: 1px dashed black;
-}
+
 
 
 
@@ -92,10 +97,8 @@ DEBUGT
 } */
 
 .debug .send, .recive {
-    
 
-     
-       
+    width: 300px;
     
   }
 
@@ -149,7 +152,7 @@ a {
     gap: 0.5rem;
     padding: 0.5rem;
     height: 70px;
-    border-bottom: 1px solid var(--bapp-txt-lighter);
+    border-bottom: 1px solid var(--bapp-border);
 }
 
 .photo-user {
@@ -248,7 +251,7 @@ Box Left
     text-align: center;
     background-color: var(--bapp-prymary);
     padding: 0.5rem;
-    border-right: 1px solid var(--bapp-txt-lighter);
+    border-right: 1px solid var(--bapp-border);
 }
 
 .icons {
@@ -256,7 +259,7 @@ Box Left
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--bapp-txt-lighter);
+    color: var(--bapp-icons);
     gap: 1rem;
     padding: 0.5rem;
 }
@@ -340,12 +343,10 @@ Box Right
     
         >.send {
             align-self: flex-end;
-            width: 300px;
         } 
     
         >.recive {
             align-self: flex-start;
-            width: 300px;
         }
 
     }
@@ -357,7 +358,7 @@ Box Right
 
 
 
-.contact {
+.contact, .digit {
     background-color: var(--bapp-prymary);
 
 }
