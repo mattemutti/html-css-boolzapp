@@ -36,12 +36,6 @@ DEBUGT
 }
 
 
-.debug .container {
-   
-
-
-
-}
 
 
 /* .debug .box-r {
@@ -78,12 +72,12 @@ DEBUGT
 
 
 
-.debug .digit {
+/* .debug .digit {
 
 
     background-color: rgb(207, 34, 52);
 
-}
+} */
 
 .debug .send {
     border: 1px dashed black;
@@ -284,6 +278,7 @@ MAIN
 
 #site_main {
     height: 100vh;
+    width: 100%;
     overflow: hidden;
 
 }
@@ -359,7 +354,7 @@ Box Left
 
 .users {
     background-color: var(--bapp-light);
-    height: calc(100% -210px);
+    height: calc(100% - 210px);
     overflow-y: scroll;
 }
 
@@ -539,33 +534,36 @@ MEDIA QUERY FIRST DESKTOP
 
             /* #endregion Calc col medium */
 
+            .container {
+                height: 100vh;
+                margin: 0;
+            }
+
+            .box-l{
+                width: 100px;
+            }
+
+
             .notify,
             .search {
                 display: none;
             }
 
             .users {
-                height: 100%;
+                height: calc(100% - 70px);
             }
 
 
-            .container {
-                width: 100vw;
-                margin-bottom: 0;
-                margin-top: 0;
 
-
-            }
-
-            .box-l {
+            /* .box-l {
                 height: 100vh;
-            }
+            } */
 
 
-            .box-r {
+            /* .box-r {
                 height: 100vh;
 
-            }
+            } */
 
             .column {
                 display: none;
