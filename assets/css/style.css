@@ -68,11 +68,7 @@ DEBUGT
 
 } */
 
-/* .debug .contact {
 
-    height: 80px;
-    
-} */
 
 
 
@@ -102,7 +98,12 @@ DEBUGT
 
 }
 
+.debug .contact {
+    border: 1px dashed black;
 
+    
+    
+} 
 
 
 
@@ -126,7 +127,6 @@ UTILITIES
 
 .row {
 
-    justify-content: space-betwee;
 
 }
 
@@ -139,13 +139,32 @@ a {
     color: var(--bapp-txt-lighter);
 }
 
+.icons,
+.icons-r {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bapp-icons);
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.icon-1,
+.icon-2,
+.icon-3,
+.icon-4 {
+    font-size: 120%;
+}
+
 
 .users-row {
     display: flex;
     flex-direction: column;
 }
 
-.card-user {
+.card-user,
+.info-user {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -249,22 +268,7 @@ Box Left
     border-right: 1px solid var(--bapp-border);
 }
 
-.icons {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--bapp-icons);
-    gap: 1rem;
-    padding: 0.5rem;
-}
 
-.icon-1,
-.icon-2,
-.icon-3,
-.icon-4 {
-    font-size: 120%;
-}
 
 
 .notify {
@@ -308,6 +312,7 @@ Box Left
 
 
 .txt-chat,
+.txt-chat-r,
 .hour-user {
     color: var(--bapp-txt-lighter);
 }
@@ -360,6 +365,12 @@ Box Right
 
     }
 
+    >.contact{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
 
 
 }
@@ -433,19 +444,12 @@ MEDIA QUERY FIRST DESKTOP
 
 @media screen and (max-width: 540px) {
 
-
-
-
-
-
     .box-l {
         display: none;
     }
 
-
-
-
-
-
+    .icons-r{
+        display: none;
+    }
 
 }
