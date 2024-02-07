@@ -185,7 +185,7 @@ Box Left
 .users {
     background-color: var(--bapp-light);
     height: calc(100% - 210px);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .txt-chat,
@@ -218,7 +218,7 @@ Box Right
         display: flex;
         flex-direction: column;
         padding: 2rem;
-        overflow-y: scroll;
+        overflow-y: auto;
         gap: 2rem;
 
 
