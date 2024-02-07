@@ -285,10 +285,16 @@ Box Right
         >.sms-write {
             color: var(--bapp-txt-lighter);
             text-align: left;
-            background-color: var(--bapp-light);
-            padding: 0.8rem;
-            width: 85%;
-            border-radius: 0.3rem;
+            width: 85%;            
+
+            > input{
+                width: 100%;
+                height: 100%;
+                border: none;
+                padding: 0.8rem;
+                border-radius: 0.5rem;
+            }
+
         }
 
 
