@@ -159,12 +159,27 @@ Box Left
 }
 
 .box-src {
-    padding: 0.8rem;
+    padding: 0.3rem;
+    padding-left: 2rem;
     background-color: var(--bapp-light);
     display: flex;
     gap: 1rem;
     color: var(--bapp-txt-lighter);
     width: 95%;
+    align-items: center;
+    border: 1px solid var(--bapp-bg-top);
+    border-radius: 0.25rem;
+}
+
+
+.form-search{
+    width: 100%;
+
+    > input{
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+    }
 }
 
 .users {

@@ -52,7 +52,15 @@
 
                 <div class="search">
                     <div class="box-src">
-                        <i class="fa-solid fa-magnifying-glass"></i><span>Cerca o inizia una nuova chat</span>
+
+                        <i class="fa-solid fa-magnifying-glass"></i>
+
+                        <form class="form-search" action="" method="post">
+                            <input type="text" name="search-in" id="search-in"
+                                placeholder="Cerca o inizia una nuova chat">
+                        </form>
+
+                        <!-- <span>Cerca o inizia una nuova chat</span> -->
                     </div>
                 </div>
                 <!-- /.search -->
@@ -217,14 +225,14 @@
 
                             <ul class="menu">
                                 <li><a href="#"><i class="fa-solid fa-chevron-down"></i></a>
-                                <ul class="tendina">
-                                    <li><a class="td-n" href="#">Info messaggio</a></li>
-                                    <li><a class="td-n" href="#">Cancella messaggio</a></li>
-                                </ul>
-                                
+                                    <ul class="tendina">
+                                        <li><a class="td-n" href="#">Info messaggio</a></li>
+                                        <li><a class="td-n" href="#">Cancella messaggio</a></li>
+                                    </ul>
+
                                 </li>
                             </ul>
-                            
+
                             <!-- Bonus non riuscito :( -->
 
 
@@ -251,7 +259,13 @@
                     <div class="icon-l"> <i class="fa-regular fa-face-smile"></i> </div>
                     <!-- /.icon-l -->
 
-                    <div class="sms-write"> Scrivi un messaggio </div>
+                    <form action="">
+                        <input type="text" placeholder="Scrivi un messaggio">
+                    </form>
+
+
+
+                    <!-- <div class="sms-write"> Scrivi un messaggio </div> -->
                     <!-- /.sms-write -->
 
                     <div class="icon-audio"> <i class="fa-solid fa-microphone"></i> </div>
@@ -267,4 +281,5 @@
     <!-- contenitore principale -->
 
 </body>
+
 </html>
